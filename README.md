@@ -46,14 +46,22 @@ named 'cleaned' and 'original. Place the file on the original.
 
 #### Analyzing Chat
 1. Configure folder and filename on env.yaml
-    - for group chats there are cases where authors possess multiple accounts. To
+    - for group chats there are cases where users possess multiple accounts. To
     count their chats as one, specify the duplicated name with the real names
-    > Potato : "Richard Hendriks"
+    > Potato : "Richard Hendriks"   
+```yaml
+folder : 'Group_Number_1'
+filename : 'Group_Number_1_chat_history.txt'
+properties :
+  duplicate_authors :
+    None : Potato : "Richard Hendriks"
+```
+  
 2. On your terminal, run:
 ```
 $ python3 main.py
 ```
-
+  
 3. OPTIONAL: If you only want specific features, simply edit and comment the ones
 that are not desired.   NOTE: For now, some features are dependent on the state of
 the dataframe according the order it was processed. For instance, to get the
