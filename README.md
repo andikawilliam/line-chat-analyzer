@@ -59,7 +59,7 @@ the dataframe according the order it was processed. For instance, to get the
 frequency of chats (text only) per user, irrelevant shares and stickers needs
 to be deleted. 
 
-##### Example: Getting text only number chat messages
+##### Example: Getting text only chat messages
 Edit **main.py** to only include:
 ```python
 TextManager = TextManager(cleaned_file_location)
