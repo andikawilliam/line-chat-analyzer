@@ -32,7 +32,8 @@ should work for both.
 ---
 
 #### Retrieving Chat History
-On how to check retrieve chat history check out (https://help.line.me/line/?contentId=20004537)
+On how to check retrieve chat history as text files check out
+(https://help.line.me/line/?contentId=20004537)
 > 1. Tap the menu icon at the top of the chat screen > Other settings.
 > 2. Tap Export chat history and choose how you want to send the file.
 
