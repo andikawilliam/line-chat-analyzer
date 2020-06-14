@@ -49,43 +49,44 @@ named 'cleaned' and 'original. Place the file on the original.
     - for group chats there are cases where users possess multiple accounts. To
     count their chats as one, specify the duplicated name with the real names
     > Potato : "Richard Hendriks"   
-```yaml
-folder : 'Group_Number_1'
-filename : 'Group_Number_1_chat_history.txt'
-properties :
-  duplicate_authors :
-    Potato : "Richard Hendriks"
-```
+    ```yaml
+    folder : 'Group_Number_1'
+    filename : 'Group_Number_1_chat_history.txt'
+    properties :
+    duplicate_authors :
+        Potato : "Richard Hendriks"
+    ```
   
 2. On your terminal, run:
-```
-$ python3 main.py
-```
+    ```
+    $ python3 main.py
+    ```
   
 3. OPTIONAL: If you only want specific features, simply edit and comment the ones
-that are not desired.   NOTE: For now, some features are dependent on the state of
+that are not desired.  NOTE: For now, some features are dependent on the state of
 the dataframe according the order it was processed. For instance, to get the
 frequency of chats (text only) per user, irrelevant shares and stickers needs
 to be deleted. 
 
-##### Example: Getting text only chat messages
-Edit **main.py** to only include:
-```python
-TextManager = TextManager(cleaned_file_location)
-TextManager.read_file_into_dataframe()
+    ##### Example: Getting text only chat messages
+    Edit **main.py** to only include:
 
-TextManager.delete_non_message_rows()
-TextManager.rename_duplicate_author_identities(
-    data['properties']['duplicate_authors']
-)
+    ```python
+    TextManager = TextManager(cleaned_file_location)
+    TextManager.read_file_into_dataframe()
 
-TextManager.delete_sticker_and_photo_messages()
-TextManager.delete_shares_and_add_photo_messages()
-TextManager.reset_row_index_after_deletion()
+    TextManager.delete_non_message_rows()
+    TextManager.rename_duplicate_author_identities(
+        data['properties']['duplicate_authors']
+    )
 
-TextManager.add_message_length_columns()
-TextManager.get_authors_num_of_messages()
-```
+    TextManager.delete_sticker_and_photo_messages()
+    TextManager.delete_shares_and_add_photo_messages()
+    TextManager.reset_row_index_after_deletion()
+
+    TextManager.add_message_length_columns()
+    TextManager.get_authors_num_of_messages()
+    ```
   
 
 ## TO DO:
