@@ -54,7 +54,7 @@ folder : 'Group_Number_1'
 filename : 'Group_Number_1_chat_history.txt'
 properties :
   duplicate_authors :
-    None : Potato : "Richard Hendriks"
+    Potato : "Richard Hendriks"
 ```
   
 2. On your terminal, run:
