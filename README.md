@@ -52,8 +52,10 @@ named 'cleaned' and 'original. Place the file on the original.
 #### Analyzing Chat
 1. Configure folder and filename on env.yaml
     - for group chats there are cases where users possess multiple accounts. To
-    count their chats as one, specify the duplicated name with the real names
+    count their chats as one, specify the duplicated name with the real names 
+    <br>
     > Potato : "Richard Hendriks"   
+    
     ```yaml
     folder : 'Group_Number_1'
     filename : 'Group_Number_1_chat_history.txt'
@@ -68,7 +70,7 @@ named 'cleaned' and 'original. Place the file on the original.
     ```
   
 3. OPTIONAL: If you only want specific features, simply edit and comment the ones
-that are not desired.  NOTE: For now, some features are dependent on the state of
+that are not desired. <br>NOTE: For now, some features are dependent on the state of
 the dataframe according the order it was processed. For instance, to get the
 frequency of chats (text only) per user, irrelevant shares and stickers needs
 to be deleted. 
