@@ -26,10 +26,9 @@ should work for both.
 * Python 3.7
 * Libraries: Pandas, Yaml, wordcloud,
 
+---
 
 ### How To Use:
-
----
 
 #### Retrieving Chat History
 On how to retrieve chat history as text files
