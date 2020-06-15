@@ -32,17 +32,20 @@ should work for both.
 ---
 
 #### Retrieving Chat History
-On how to check retrieve chat history as text files check out
+On how to retrieve chat history as text files
 (https://help.line.me/line/?contentId=20004537)
 > 1. Tap the menu icon at the top of the chat screen > Other settings.
 > 2. Tap Export chat history and choose how you want to send the file.
 
-Before you transfer send the text file from your phone to your computer, create a
-folder with same name as your group name separated by comma. This serves as a 
-convention to help you in the future since you need to specify the name of the
+Before you transfer the text file from your phone to your computer, create a
+folder with same name as your group name separated by comma. This convention
+serves to help you in the future since you need to specify the name of the
 folder as well as the name of the file in the config. Then create two folders
 named 'cleaned' and 'original. Place the file on the original.
 > Group_Number_1_chat_history.txt --> folder: Group_Number_1
+> +-- Group_Number_1
+> |   +-- cleaned
+> |   +-- original -> put file here
 
 #### Analyzing Chat
 1. Configure folder and filename on env.yaml
