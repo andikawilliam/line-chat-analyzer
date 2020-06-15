@@ -43,10 +43,11 @@ serves to help you in the future since you need to specify the name of the
 folder as well as the name of the file in the config. Then create two folders
 named 'cleaned' and 'original. Place the file on the original.
 > Group_Number_1_chat_history.txt --> folder: Group_Number_1
-> +-- Group_Number_1
-> |   +-- cleaned
-> |   +-- original -> put file here
-
+```bash
+--- Group_Number_1
+    |--- cleaned
+    |--- original > put file here
+```
 #### Analyzing Chat
 1. Configure folder and filename on env.yaml
     - for group chats there are cases where users possess multiple accounts. To
