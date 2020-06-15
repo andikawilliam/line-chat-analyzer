@@ -12,6 +12,7 @@ there we can count a user's total number of chats, stickers, shares, etc. Since
 chat history formats for personal chat and group chats are the same, this code
 should work for both.
 
+![Most Words Cloud](/images/most_words.png) ![Top Words](/images/top_words.png)
 ### Current Features
 > - Frequency of chats per hour -> most active hours
 > - Frequency of chat (including shares, stickers, photos) per user 

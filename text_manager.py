@@ -112,6 +112,7 @@ class TextManager():
 
 		pp = pprint.PrettyPrinter(indent=4)
 		top_words = results.most_common(50)
+		print("TOP WORDS")
 		pp.pprint(top_words)
 		return top_words
 		
@@ -121,6 +122,6 @@ class TextManager():
 		plt.imshow(wordcloud)
 		plt.axis("off")
 		plt.show(block=False)
-		plt.pause(1)
+		plt.pause(10)
 		plt.close()
 		
