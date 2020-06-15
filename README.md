@@ -53,8 +53,6 @@ named 'cleaned' and 'original. Place the file on the original.
 1. Configure folder and filename on env.yaml
     - for group chats there are cases where users possess multiple accounts. To
     count their chats as one, specify the duplicated name with the real names 
-    <br>
-    > Potato : "Richard Hendriks"   
     
     ```yaml
     folder : 'Group_Number_1'
@@ -72,7 +70,7 @@ named 'cleaned' and 'original. Place the file on the original.
 3. OPTIONAL: If you only want specific features, simply edit and comment the ones
 that are not desired. <br>NOTE: For now, some features are dependent on the state of
 the dataframe according the order it was processed. For instance, to get the
-frequency of chats (text only) per user, irrelevant shares and stickers needs
+frequency of chats (text only) per user shares and stickers needs
 to be deleted. 
 
     ##### Example: Getting text only chat messages
@@ -97,7 +95,8 @@ to be deleted.
   
 
 ## TO DO:
-1. Add test files
-2. Config menu to choose which stat to retrieve
-3. Refactor main.py module
-3. Web implementation
+* Add graph generation
+* Add testing 
+* Config menu to choose which stat to retrieve
+* Refactor main.py module
+* Web implementation
